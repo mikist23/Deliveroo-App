@@ -18,6 +18,7 @@ import {
 } from "react-native-heroicons/solid";
 import SearchIcon from "react-native-vector-icons/AntDesign";
 import Categories from "../components/Categories";
+import FeaturedRow from "../components/FeaturedRow";
 
 function HomeScreen() {
   const navigation = useNavigation();
@@ -71,6 +72,43 @@ function HomeScreen() {
             <Categories />
 
             {/**Features */}
+             
+            <FeaturedRow
+              id="123"
+              title="Featured"
+              description="Paid placements from our partners"
+              featuredCategory="featured"
+            />
+
+            {/**Tasty Discounts */}
+
+            <FeaturedRow
+              id="1234"
+              title="Featured"
+              description="Paid placements from our partners"
+              featuredCategory="featured"
+            />
+
+            {/**Offers near you */}
+
+            <FeaturedRow
+              id="12345" 
+              title="Featured"
+              description="Paid placements from our partners"
+              featuredCategory="featured"
+            />
+            
+
+            {/**Offers near you */}
+
+            <FeaturedRow
+              id="12346" 
+              title="Featured"
+              description="Paid placements from our partners"
+              featuredCategory="featured"
+            />
+            
+
           </ScrollView>
         </View>
       </SafeAreaView>
